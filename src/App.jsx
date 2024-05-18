@@ -1,11 +1,18 @@
-import { useState } from 'react'
-import logo from "./logo/MotionArtEffect-logo.png"
 import Navbar from './components/Navbar'
 import greenlogo from "./logo/motionarteffect-img2.png"
 import redlogo from "./logo/motionarteffect-img1.png"
 import Review from './components/Review'
 import Wlogo from './logo/motionarteffect-img3.png'
 import MagicWand from "./logo/motionarteffect-img5.png"
+import SectionBox from "./logo/motionarteffect-img11.png"
+import PageBox from "./logo/motionarteffect-img10.png"
+import Card from './components/Card'
+import ThumpsUp from "./logo/motionarteffect-img6.png"
+import Moon from "./logo/motionarteffect-img7.png"
+import Speed from "./logo/motionarteffect-img9.png"
+import LongBar from './components/LongBar'
+import IconCard from './components/IconCard'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -61,7 +68,7 @@ function App() {
           <div className='grid grid-cols-5 w-full'> 
               <div className=' grid col-span-3 font-sora  '>
                   <h2 className='text-[#eee5ff] text-[40px]  font-semibold'>Turn Your Cursor Into A Colorful Magic Wand & Charm Your Visitors</h2>
-                  <div className='text-[#b2acc2] pt-3'>Motion Art for Elementor is a groundbreaking plugin that empowers you to effortlessly infuse your website with visually stunning motion art elements.</div>
+                  <div className='text-[#b2acc2]  pt-3'>Motion Art for Elementor is a groundbreaking plugin that empowers you to effortlessly infuse your website with visually stunning motion art elements.</div>
                   <div className='pt-7'>
                     <button className='text-white bg-blue-300 pl-6 pr-6 pt-3 pb-3 rounded-2xl font-sora text-lg flex gap-5'>
                       Purchase From Envato
@@ -74,10 +81,48 @@ function App() {
               </div>
           </div>
         </div>
-        <div>
-          
+        <div className='w-full flex flex-col items-center pt-24'>
+            <div className='w-7/12 text-[#eee5ff] text-[42px] text-center font-sora flex '>
+           <h2>Apply On Any Section Or Enable For Whole Page</h2> 
+            </div>
+            <div className='pt-[60px] flex gap-5'>
+              <div>
+              <Card image={SectionBox} title={"Apply On Section"} text={"Apply on section is a game-changer, offering an unparalleled way to manage applications directly from your website."}></Card>
+              </div>
+               <div className='pt-16'> 
+                <Card image={PageBox} title={"Apply On Page"} text={"Take your website to new heights with Motion Art for Elementor. Embrace the power of motion and animation."}></Card>
+               </div>
+            </div>
         </div>
+        <div className='w-full pt-36'>
+            <LongBar></LongBar>
+        </div>
+        <div className='flex pt-24 flex-col items-center'> 
+            <div className='max-w-[460px] text-[#eee5ff] text-[40px] text-center'>
+            An All-Round Plugin With Powerful Features
+            </div>
+            <div className='max-w-[500px] text-[#b2acc2] text-[16px] text-center pt-5'>
+            Whether you're a seasoned web designer or just starting out, Motion Art for Elementor seamlessly integrates with the Elementor platform, providing you with a seamless and intuitive experience.
+            </div>
+        </div>
+        <div className='flex pt-16'>
+          <div className='grid grid-cols-3 gap-5'>
+            <div className='grid col-span-1'>
+              <IconCard image={Speed} title={"Light Weight"} text={"Motion Art for Elementor is designed to be lightweight."}></IconCard>
+            </div>
+            <div className='grid col-span-1'>
+              <IconCard image={ThumpsUp} title={"100% Responsive"} text={"Create a consistent visual experience across all devices."}></IconCard>
+            </div>
+            <div className='grid col-span-1'>
+              <IconCard image={Moon} title={"User Friendly Interface"} text={"Ensure a smooth experience for both applicants and administrators."}></IconCard>
+            </div>
+          </div>
+        </div>
+        
       </div>
+      <div className='w-full pt-32'>
+          <Footer/>
+        </div>
     </div>
     </>
   )
