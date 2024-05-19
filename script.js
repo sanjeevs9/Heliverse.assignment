@@ -1578,7 +1578,7 @@ window.addEventListener('mouseup', () => {
     updatePointerUpData(pointers[0]);
 });
 
-canvas.addEventListener('touchstart', e => {
+window.addEventListener('touchstart', e => {
     e.preventDefault();
     const touches = e.targetTouches;
     while (touches.length >= pointers.length)

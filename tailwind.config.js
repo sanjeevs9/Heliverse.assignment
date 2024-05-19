@@ -15,6 +15,10 @@ export default {
       fontFamily:{
         sora:["Sora", 'sans-serif'],
         Outfit:["Outfit", 'sans-serif']
+      },
+      screens:{
+        "3xl":"1700px",
+        "4xl":"1850px"
       }
     },
   },
