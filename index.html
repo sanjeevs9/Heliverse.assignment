@@ -1,13 +1,51 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Cache-Control" content="no-cache">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+
+        <link rel="apple-touch-icon" href="logo.png">
+        <link rel="icon" href="logo.png">
+
+        <title>WebGL Fluid Simulation</title>
+        <meta name="description" content="A WebGL fluid simulation that works in mobile browsers.">
+
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Webgl Fluid Simulation">
+        <meta property="og:description" content="A WebGL fluid simulation that works in mobile browsers.">
+       
+        <style>
+            
+          #root{
+            position: relative;
+          }
+           
+
+            body {
+                margin: 0;
+            } 
+
+            canvas {
+                width: 100vw;
+                height: 100vh;
+                position: fixed;
+                inset: 0;
+          
+              
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <canvas></canvas>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+        <script src="/script.js"></script>
+    </body>
 </html>

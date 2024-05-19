@@ -18,11 +18,12 @@ function App() {
 
   return (
     <>
-    <div className='bg-bg min-h-screen flex items-center flex-col'>
+    <canvas></canvas>
+    <div className='bg-transparent min-h-screen flex items-center flex-col'>
       <Navbar/>
-      <div className='w-4/6'>
+      <div className='md:w-4/6 sm:w-auto'>
         <div className='w-full flex justify-between pt-10'>
-            <div className='flex'>
+            <div className='flex hover:cursor-pointer'>
             <img className=' size-fit' src="https://qodematrix.com/wp-content/uploads/2023/10/MotionArtEffect-logo.png"></img>
             </div>
             <div className='flex'>
@@ -31,8 +32,10 @@ function App() {
         </div>
         <div className='grid grid-cols-4 text-white w-full  pt-16 '>
             <div className='grid col-span-1 pt-2 font-sora '>
-              <div className='gap-6 flex flex-col'>
-              <span>Transform Your<br /> Website</span>
+              <div className='gap-6 flex flex-col font-semibold font-sora'>
+                <span>
+              <span className='text-transparent bg-clip-text  bg-gradient-to-r from-custom-orange to-custom-blue max-w-40'>Transform<br /></span><span className='text-transparent bg-clip-text  bg-gradient-to-r from-custom-orange to-custom-blue'> Your Website</span>
+              </span>
               <span className='text-[#eee5ff]'>With Motion Art<br /> Effect</span>
                 
               </div>
@@ -40,7 +43,7 @@ function App() {
             </div>
             <div className='grid col-span-2'>
               <div className='font-sora text-[#eee5ff] text-[65px] font-[500]' > 
-                Attract Your Visitors Attention With Colorful <span>Motion Art Effect</span>
+                Attract Your Visitors Attention With Colorful <span className='text-transparent bg-clip-text bg-gradient-to-r from-custom-orange to-custom-blue'>Motion</span><span className='text-transparent bg-clip-text bg-gradient-to-r from-custom-blue to-custom-blue'> Art Effect</span>
               </div>
               <div className='text-[16px] pt-3 overflow-auto font-Outfit font-light text-[#b2acc2]'>
               Unleash the power of creativity with Motion Art for Elementor - your <br/>
@@ -70,7 +73,7 @@ function App() {
                   <h2 className='text-[#eee5ff] text-[40px]  font-semibold'>Turn Your Cursor Into A Colorful Magic Wand & Charm Your Visitors</h2>
                   <div className='text-[#b2acc2]  pt-3'>Motion Art for Elementor is a groundbreaking plugin that empowers you to effortlessly infuse your website with visually stunning motion art elements.</div>
                   <div className='pt-7'>
-                    <button className='text-white bg-blue-300 pl-6 pr-6 pt-3 pb-3 rounded-2xl font-sora text-lg flex gap-5'>
+                    <button className='text-white bg-gradient-to-r from-custom-orange to-custom-blue  pl-7 pr-7 pt-4 pb-4 rounded-2xl font-sora text-lg flex gap-5'>
                       Purchase From Envato
                       <div className='h-4 w-3 border-[1px] mt-2'></div>
                     </button>
