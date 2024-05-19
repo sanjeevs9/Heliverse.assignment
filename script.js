@@ -48,7 +48,7 @@ let config = {
     BLOOM_ITERATIONS: 8,
     BLOOM_RESOLUTION: 256,
     BLOOM_INTENSITY: 0.8,
-    BLOOM_THRESHOLD: 1,
+    BLOOM_THRESHOLD: 0.6,
     BLOOM_SOFT_KNEE: 0.7,
     SUNRAYS: false,
     SUNRAYS_RESOLUTION: 196,
@@ -1555,25 +1555,14 @@ function checkLastMove(){
   }
   return false;
 }
-let lastMousePos = { x: 0, y: 0 };
 
 window.addEventListener('mousemove', e => {
-    let offsetX = 0, offsetY = 0;
-    if (checkLastMove()) {
-        if (e.offsetX > lastMousePos.x) { // mouse moved to the right
-            offsetX = 40;
-        } else if (e.offsetX < lastMousePos.x) { // mouse moved to the left
-            offsetX = -40;
-        }
+    var canvas = document.querySelector('canvas');
+    var rect = canvas.getBoundingClientRect();
+    var posX = scaleByPixelRatio(e.clientX - rect.left);
+    var posY = scaleByPixelRatio(e.clientY - rect.top);
 
-        if (e.offsetY > lastMousePos.y) { // mouse moved down
-            offsetY = 40;
-        } else if (e.offsetY < lastMousePos.y) { // mouse moved up
-            offsetY = -40;
-        }
-
-        let posX = scaleByPixelRatio(e.offsetX) + offsetX;
-        let posY = scaleByPixelRatio(e.offsetY) + offsetY;
+    if(checkLastMove()){
         let pointer = pointers.find(p => p.id == -1);
         if (pointer == null)
             pointer = new pointerPrototype();
@@ -1582,19 +1571,14 @@ window.addEventListener('mousemove', e => {
 
     let pointer = pointers[0];
     if (!pointer.down) return;
-    let posX = scaleByPixelRatio(e.offsetX) + offsetX;
-    let posY = scaleByPixelRatio(e.offsetY) + offsetY;
     updatePointerMoveData(pointer, posX, posY);
-
-    // update last mouse position
-    lastMousePos = { x: e.offsetX, y: e.offsetY };
 });
 
 window.addEventListener('mouseup', () => {
     updatePointerUpData(pointers[0]);
 });
 
-window.addEventListener('touchstart', e => {
+canvas.addEventListener('touchstart', e => {
     e.preventDefault();
     const touches = e.targetTouches;
     while (touches.length >= pointers.length)
@@ -1606,7 +1590,7 @@ window.addEventListener('touchstart', e => {
     }
 });
 
-window.addEventListener('touchmove', e => {
+canvas.addEventListener('touchmove', e => {
     e.preventDefault();
     const touches = e.targetTouches;
     for (let i = 0; i < touches.length; i++) {

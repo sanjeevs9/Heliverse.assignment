@@ -18,10 +18,10 @@ function App() {
 
   return (
     <>
-    <canvas></canvas>
-    <div className='bg-transparent min-h-screen flex items-center flex-col'>
+    <canvas style={{ pointerEvents: 'none' }}></canvas>
+    <div className='bg-transparent min-h-screen flex items-center flex-col '>
       <Navbar/>
-      <div className='md:w-4/6 sm:w-auto'>
+      <div className='md:w-4/6 sm:w-auto '>
         <div className='w-full flex justify-between pt-10'>
             <div className='flex hover:cursor-pointer'>
             <img className=' size-fit' src="https://qodematrix.com/wp-content/uploads/2023/10/MotionArtEffect-logo.png"></img>
