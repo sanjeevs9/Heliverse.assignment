@@ -31,7 +31,7 @@ function App() {
               <button className='bg-white pt-2 pb-2 pl-3 pr-3 rounded-lg w-48 font-sora  text-bg hover:bg-transparent hover:text-white border-2 hidden lg:block'>Purchase Now</button>
             </div>
         </div>
-        <div className='grid grid-rows-3 md:grid-cols-4 text-white w-full  pt-16  place-items-center md:place-items-start'>
+        <div className='grid grid-rows-3 md:grid-rows-none md:grid-cols-4 text-white w-full  pt-16  place-items-center md:place-items-start'>
 
             <div className='grid row-span-1 md:col-span-1 pt-2 font-sora '>
               <div className='gap-2 md:gap-6 flex flex-col font-semibold font-sora'>
@@ -53,12 +53,12 @@ function App() {
               into your website. 
               </div>
             </div>
-            <div className='grid col-span-1 '>
+            <div className='grid col-span-1  '>
 
             </div>
         </div>
         <div className='flex w-full flex-col items-center pt-24'>
-            <div className='flex font-sora   font-semibold text-lg text-[#eee5ff]'>
+            <div className='flex font-sora   font-semibold text-lg text-[#eee5ff] place-items-center'>
             Trusted by thousands of users around the world
             </div>
             <div className='flex pt-16 w-full '>
