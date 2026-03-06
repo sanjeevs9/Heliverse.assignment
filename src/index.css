@@ -1,6 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sora:wght@100..800&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 40px rgba(248, 117, 22, 0.3), 0 0 80px rgba(94, 17, 255, 0.15);
+  }
+  .card-glow {
+    box-shadow: 0 0 40px rgba(248, 117, 22, 0.06), 0 0 80px rgba(94, 17, 255, 0.04);
+  }
+}

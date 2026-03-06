@@ -14,7 +14,8 @@ export default {
       },
       fontFamily:{
         sora:["Sora", 'sans-serif'],
-        Outfit:["Outfit", 'sans-serif']
+        Outfit:["Outfit", 'sans-serif'],
+        clash:["Clash Display", 'sans-serif']
       },
       screens:{
         "3xl":"1700px",
