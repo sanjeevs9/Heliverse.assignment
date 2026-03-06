@@ -20,6 +20,15 @@ export default {
       screens:{
         "3xl":"1700px",
         "4xl":"1850px"
+      },
+      animation: {
+        motionGradient: 'motionGradient 4s ease infinite',
+      },
+      keyframes: {
+        motionGradient: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
+        },
       }
     },
   },

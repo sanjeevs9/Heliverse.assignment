@@ -45,7 +45,7 @@ function App() {
             </div>
             <div className='grid row-span-2 md:col-span-2 justify-center palce-items-center pl-4 pr-4 sm:pl-0 sm:pr-0 '>
               <div className='font-clash text-glow text-[#eee5ff] xl:text-[65px] md:text-[40px] lg:text-[55px] font-[500] text-[26px]' >
-                Attract Your Visitors Attention With Colorful <span className='text-transparent bg-clip-text bg-gradient-to-r from-custom-orange to-custom-blue'> <br/>Motion</span><span className='text-transparent bg-clip-text bg-gradient-to-r from-custom-blue to-custom-blue'> Art Effect</span>
+                Attract Your Visitors Attention With Colorful <span className='text-transparent bg-clip-text bg-gradient-to-r from-custom-orange via-purple-500 to-custom-blue bg-[length:200%_200%] animate-motionGradient'> <br/>Motion</span><span className='text-transparent bg-clip-text bg-gradient-to-r from-custom-blue via-purple-400 to-custom-orange bg-[length:200%_200%] animate-motionGradient'> Art Effect</span>
               </div>
               <div className='text-[16px] pt-3 overflow-auto font-Outfit font-light text-[#b2acc2] '>
               Unleash the power of creativity with Motion Art for Elementor - your <br/>

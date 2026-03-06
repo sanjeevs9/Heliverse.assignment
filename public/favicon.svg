@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F87516"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="1.5"/>
+    </filter>
+  </defs>
+  <circle cx="16" cy="16" r="13" fill="url(#g1)" filter="url(#blur)"/>
+  <text x="16" y="21" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="white">M</text>
+</svg>
